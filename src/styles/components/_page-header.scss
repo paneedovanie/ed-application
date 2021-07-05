@@ -1,0 +1,15 @@
+.page-header {
+  margin-bottom: 3rem;
+  
+  &__title {
+    color: $accent-2-color;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &__description {
+    color: $accent-1-color;
+    font-size: 1rem;
+    text-align: center;
+  }
+}

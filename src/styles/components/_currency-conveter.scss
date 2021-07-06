@@ -1,0 +1,25 @@
+.currency-converter {
+  &__content {
+    text-align: center;
+    
+    &__message {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $success-color;
+      }
+    }
+
+    &__error {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $error-color;
+      }
+    }
+
+    &__button {
+      margin-top: 1.25rem;
+    }
+  }
+}

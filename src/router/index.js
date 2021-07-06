@@ -18,6 +18,16 @@ const routes = [
     path: '/short-link',
     name: 'short-link',
     component: () => import('@/views/ShortLink.vue')
+  },
+  {
+    path: '/free-message',
+    name: 'free-message',
+    component: () => import('@/views/FreeMessage.vue')
+  },
+  {
+    path: '/currency-converter',
+    name: 'currency-converter',
+    component: () => import('@/views/CurrencyConverter.vue')
   }
 ]
 

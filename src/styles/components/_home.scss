@@ -1,6 +1,7 @@
 .home {
   &__card {
     padding: 0.5rem;
+    margin: 1rem;
     border-radius: 0.5rem;
     background-color: $accent-1-color;
     cursor: pointer;
@@ -8,9 +9,10 @@
     &__icon {
       background-color: $primary-color;
       border-radius: 50%;
+      padding: 0.5rem;
 
       .v-icon.v-icon {
-        font-size: 3rem;
+        font-size: 2rem;
         color: $accent-1-color;
       }
     }

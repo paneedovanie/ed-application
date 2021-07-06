@@ -1,0 +1,52 @@
+.free-message {
+  &__content {
+    text-align: center;
+
+    &__message {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $success-color;
+      }
+    }
+
+    &__error {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $error-color;
+      }
+    }
+
+    &__to {
+      margin-bottom: 1.25rem;
+
+      input {
+        background-color: $accent-1-color;
+      }
+    }
+
+    &__from {
+      margin-bottom: 1.25rem;
+
+      input {
+        background-color: $accent-1-color;
+      }
+    }
+
+    &__message {
+      margin-bottom: 1.25rem;
+
+      textarea {
+        background-color: $accent-1-color;
+      }
+    }
+
+    &__button {
+      button {
+        background-color: $primary-color;
+        color: $accent-1-color;
+      }
+    }
+  }
+}

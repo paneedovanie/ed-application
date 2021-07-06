@@ -25,14 +25,18 @@
 </template>
 
 <script>
-import ShortLink from '../models/ShortLink'
+import ShortLink from '@/models/ShortLink'
+// import FreeMessage from '@/models/FreeMessage'
+import CurrencyConverter from '@/models/CurrencyConverter'
 
 export default {
   name: 'Home',
 
   data: () => ({
     services: [
-      new ShortLink
+      new ShortLink,
+      // new FreeMessage,
+      new CurrencyConverter
     ]
   })
 }

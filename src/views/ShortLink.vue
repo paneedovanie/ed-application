@@ -1,7 +1,11 @@
 <template>
   <div class="short-link">
     <page-header :title="shortLink.title" :description="shortLink.description"></page-header>
-    <div class="short-link__content">
+    <form 
+      :disabled="shortLink.isLoading"
+      @submit.prevent="submit" 
+      class="short-link__content" 
+    >
       <div class="short-link__content__message" v-if="shortLink.messages">
         <span v-text="shortLink.messages"></span>
       </div>
@@ -9,32 +13,37 @@
         <span v-text="shortLink.errors"></span>
       </div>
       <div class="short-link__content__input">
-        <input 
+        <f-input 
           :disabled="shortLink.isLoading"
           @input="input" 
           placeholder="Your URL here" 
           type="text" 
           v-model="shortLink.data.url" 
-        >
+        />
       </div>
       <div class="short-link__content__button">
-        <button 
+        <f-button
           :disabled="shortLink.isPrestine || shortLink.isLoading"
-          @click="submit" 
           class="generate"
+          type="submit"
           v-if="!result"
-        >Generate</button>
-        <button 
+        >Generate</f-button>
+        <f-button
           @click="copy" 
           class="copy"
           v-else
-        >Copy</button>
+        >Copy</f-button>
       </div>
       <div class="short-link__content__result" v-if="result">
-        <input type="text" ref="link" readonly :value="result.link">
+        <f-input 
+          :value="result.link" 
+          readonly 
+          ref="link" 
+          type="text" 
+        />
       </div>
       Powered by <a href="https://bitly.com" target="__blank">bitly.com</a>
-    </div>
+    </form>
   </div>
 </template>
 
@@ -54,6 +63,14 @@ export default {
   }),
 
   methods: {
+    copy () {
+      const link = this.$refs.link 
+      link.select()
+      link.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      this.shortLink.setMessages('Copied: ' + link.value)
+    },
+
     input () {
       let isPrestine = true
       if(this.shortLink.data.url !== '') isPrestine = false
@@ -88,20 +105,6 @@ export default {
         this.shortLink.load(false)
         this.shortLink.prestine()
       })
-    },
-
-    copy () {
-      const link = this.$refs.link 
-      link.select()
-      link.setSelectionRange(0, 99999)
-      document.execCommand("copy");
-      this.shortLink.setMessages('Copied: ' + link.value)
-    }
-  },
-
-  watch: {
-    'shortLink.data': function (val) {
-      console.log(val)
     }
   }
 }

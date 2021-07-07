@@ -2,13 +2,12 @@
   &__card {
     padding: 0.5rem;
     margin: 1rem;
-    border-radius: 0.5rem;
     background-color: $accent-1-color;
     cursor: pointer;
 
     &__icon {
       background-color: $primary-color;
-      border-radius: 50%;
+      border-radius: 0.3rem;
       padding: 0.5rem;
 
       .v-icon.v-icon {
@@ -29,6 +28,7 @@
 
     &:hover {
       background-color: $accent-2-color;
+      box-shadow: 0 0.2rem 0.3rem grey;
 
       .home__card__icon {
         .v-icon.v-icon {

@@ -26,7 +26,7 @@
 
 <script>
 import ShortLink from '@/models/ShortLink'
-// import FreeMessage from '@/models/FreeMessage'
+import Quotes from '@/models/Quotes'
 import CurrencyConverter from '@/models/CurrencyConverter'
 
 export default {
@@ -35,7 +35,7 @@ export default {
   data: () => ({
     services: [
       new ShortLink,
-      // new FreeMessage,
+      new Quotes,
       new CurrencyConverter
     ]
   })

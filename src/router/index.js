@@ -20,9 +20,9 @@ const routes = [
     component: () => import('@/views/ShortLink.vue')
   },
   {
-    path: '/free-message',
-    name: 'free-message',
-    component: () => import('@/views/FreeMessage.vue')
+    path: '/quotes',
+    name: 'quotes',
+    component: () => import('@/views/Quotes.vue')
   },
   {
     path: '/currency-converter',

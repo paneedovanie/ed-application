@@ -1,6 +1,6 @@
 import BaseModel from "./BaseModel"
 
-export default class ShortLink extends BaseModel {
+export default class CurrencyConverter extends BaseModel {
   constructor() {
     super()
     this.icon = 'mdi-cash'
@@ -8,8 +8,8 @@ export default class ShortLink extends BaseModel {
     this.path = '/currency-converter'
     this.description = 'Calculate currency and foreign exchange rates'
     this.data = {
-      to: '',
-      from: '',
+      to: 'PHP',
+      from: 'USD',
       amount: '',
       result: null
     }

@@ -1,0 +1,33 @@
+.quotes {
+  &__content {
+    text-align: center;
+    
+    &__message {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $success-color;
+      }
+    }
+
+    &__error {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $error-color;
+      }
+    }
+
+    &__result {
+      &__phrase {
+        background-color: $white-color;
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+    }
+
+    &__button {
+      margin-top: 1.25rem;
+    }
+  }
+}

@@ -21,6 +21,9 @@
       p {
         opacity: .65;
         font-style: italic;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
       }
     }
 

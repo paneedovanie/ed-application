@@ -28,6 +28,11 @@ const routes = [
     path: '/currency-converter',
     name: 'currency-converter',
     component: () => import('@/views/CurrencyConverter.vue')
+  },
+  {
+    path: '/yt-downloader',
+    name: 'yt-downloader',
+    component: () => import('@/views/YTDownloader.vue')
   }
 ]
 

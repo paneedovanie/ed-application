@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <page-header :title="`About`" :description="'The website has compilation of different tools that helps you.'"></page-header>
   </div>
 </template>

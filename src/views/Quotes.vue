@@ -32,6 +32,7 @@
           type="submit"
         >Generate</f-button>
       </div>
+      Powered by <a href="https://rapidapi.com/martin.svoboda/api/quotes15/" target="__blank">rapidapi.com</a>
     </form>
   </div>
 </template>

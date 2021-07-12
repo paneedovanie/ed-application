@@ -28,6 +28,7 @@
 import ShortLink from '@/models/ShortLink'
 import Quotes from '@/models/Quotes'
 import CurrencyConverter from '@/models/CurrencyConverter'
+import YTDownloader from '@/models/YTDownloader'
 
 export default {
   name: 'Home',
@@ -36,7 +37,8 @@ export default {
     services: [
       new ShortLink,
       new Quotes,
-      new CurrencyConverter
+      new CurrencyConverter,
+      new YTDownloader
     ]
   })
 }

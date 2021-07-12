@@ -56,6 +56,7 @@
           type="submit"
         >Convert</f-button>
       </div>
+      Powered by <a href="https://rapidapi.com/apininjas/api/currency-converter-by-api-ninjas/" target="__blank">rapidapi.com</a>
     </form>
   </div>
 </template>

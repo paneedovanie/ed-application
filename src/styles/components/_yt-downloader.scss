@@ -1,0 +1,56 @@
+.yt-downloader {
+  &__content {
+    text-align: center;
+
+    &__message {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $success-color;
+      }
+    }
+
+    &__error {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $error-color;
+      }
+    }
+
+    &__input {
+      margin-bottom: 1.25rem;
+    }
+
+    &__button {
+      button {
+        &.copy {
+          background-color: $success-color;
+          color: $accent-1-color;
+        }
+      }
+    }
+
+    &__result {
+      margin-bottom: 1.25rem;
+      background-color: $accent-2-color;
+      padding: 0.5rem;
+
+      &__link {
+        padding: 0.5rem;
+
+        .quality {
+          color: $background-color;
+        }
+
+        .extension {
+          color: $primary-color;
+        }
+
+        a {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

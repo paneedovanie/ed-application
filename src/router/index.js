@@ -33,6 +33,11 @@ const routes = [
     path: '/yt-downloader',
     name: 'yt-downloader',
     component: () => import('@/views/YTDownloader.vue')
+  },
+  {
+    path: '/covid-stats',
+    name: 'covid-stats',
+    component: () => import('@/views/CovidStats.vue')
   }
 ]
 

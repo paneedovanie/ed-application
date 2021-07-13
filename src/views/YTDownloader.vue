@@ -61,7 +61,6 @@ export default {
 
   methods: {
     input () {
-      console.log(this.yTDownloader.data.code)
       let isPrestine = true
       if(this.yTDownloader.data.code !== '') isPrestine = false
       this.yTDownloader.prestine(isPrestine)

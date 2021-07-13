@@ -1,0 +1,71 @@
+.covid-stats {
+  &__content {
+    text-align: center;
+
+    &__message {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $success-color;
+      }
+    }
+
+    &__error {
+      margin-bottom: 1.25rem;
+
+      span {
+        color: $error-color;
+      }
+    }
+
+    &__input {
+      margin-bottom: 1.25rem;
+    }
+
+    &__button {
+      button {
+        &.copy {
+          background-color: $success-color;
+          color: $accent-1-color;
+        }
+      }
+    }
+
+    &__result {
+      margin-bottom: 1.25rem;
+      background-color: $accent-2-color;
+      padding: 0.5rem;
+
+      &__location {
+        margin-bottom: 1.25rem;
+
+        &__continent {
+          background-color: $background-color;
+          color: $accent-1-color;
+          padding: 0.2rem;
+          display: inline;
+          font-size: 0.8rem;
+        }
+      }
+
+      &__table {
+        width: 100%;
+
+        .label {
+          text-align: right;
+          width: 50%;
+          padding: 0.2rem;
+        }
+
+        .data {
+          width: 50%;
+          padding: 0.2rem;
+          text-align: left;
+        }
+      }
+      .percent {
+        font-size: 5rem;
+      }
+    }
+  }
+}

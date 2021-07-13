@@ -1,0 +1,27 @@
+$primary-color: #17252A;
+.text- {
+  &primary {
+    color: $primary-color
+  }
+  &secondary {
+    color: $secondary-color
+  }
+  &accent-1 {
+    color: $accent-1-color
+  }
+  &accent-2 {
+    color: $accent-2-color
+  }
+  &error {
+    color: $error-color
+  }
+  &success {
+    color: $success-color
+  }
+  &white {
+    color: $white-color
+  }
+  &black {
+    color: $black-color
+  }
+}

@@ -5,10 +5,16 @@
     background-color: $accent-1-color;
     cursor: pointer;
 
+    .icon-col {
+      display: flex;
+      justify-content: center;
+    }
+
     &__icon {
       background-color: $primary-color;
       border-radius: 0.3rem;
       padding: 0.5rem;
+      width: min-content;
 
       .v-icon.v-icon {
         font-size: 2rem;

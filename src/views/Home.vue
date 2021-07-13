@@ -5,7 +5,7 @@
         <template v-for="(item,i) in services">
           <router-link tag="div" :to="item.path" class="home__card" :key="i">
             <v-row>
-              <v-col cols="auto">
+              <v-col class="icon-col" cols="12" md="auto">
                 <div class="home__card__icon">
                   <v-icon v-html="item.icon"></v-icon>
                 </div>

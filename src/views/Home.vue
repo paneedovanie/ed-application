@@ -30,6 +30,7 @@ import Quotes from '@/models/Quotes'
 import CurrencyConverter from '@/models/CurrencyConverter'
 import YTDownloader from '@/models/YTDownloader'
 import CovidStats from '@/models/CovidStats'
+import Play2Earn from '@/models/Play2Earn'
 
 export default {
   name: 'Home',
@@ -40,7 +41,8 @@ export default {
       new Quotes,
       new CurrencyConverter,
       new YTDownloader,
-      new CovidStats
+      new CovidStats,
+      new Play2Earn
     ]
   })
 }

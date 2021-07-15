@@ -38,6 +38,11 @@ const routes = [
     path: '/covid-stats',
     name: 'covid-stats',
     component: () => import('@/views/CovidStats.vue')
+  },
+  {
+    path: '/play-2-earn',
+    name: 'play-2-earn',
+    component: () => import('@/views/Play2Earn.vue')
   }
 ]
 

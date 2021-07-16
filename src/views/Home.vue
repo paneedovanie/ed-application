@@ -4,23 +4,26 @@
       <template v-for="(item,i) in services">
         <v-col cols="auto" :key="i" >
           <router-link tag="div" :to="item.path" class="home__card">
-              <div class="home__card__icon">
-                <div class="home__card__icon-shadow">
+            <div class="home__card-shadow"></div>
+            <div class="home__card-card">
+              <div class="home__card-card__icon">
+                <div class="home__card-card__icon-shadow">
                 </div>
-                <div class="home__card__icon-icon">
+                <div class="home__card-card__icon-icon">
                   <v-icon v-html="item.icon"></v-icon>
                 </div>
               </div>
-              <div class="home__card__content">
-                <div class="home__card__content-shadow">
+              <div class="home__card-card__content">
+                <div class="home__card-card__content-shadow">
                   <h2 v-text="item.title"></h2>
                   <p v-text="item.description"></p>
                 </div>
-                <div class="home__card__content-content">
+                <div class="home__card-card__content-content">
                   <h2 v-text="item.title"></h2>
                   <p v-text="item.description"></p>
                 </div>
               </div>
+            </div>
           </router-link>
         </v-col>
       </template>

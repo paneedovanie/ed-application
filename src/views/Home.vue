@@ -1,25 +1,29 @@
 <template>
   <div class="home">
-    <v-row>
-      <v-col cols="12" md="6">
-        <template v-for="(item,i) in services">
-          <router-link tag="div" :to="item.path" class="home__card" :key="i">
-            <v-row>
-              <v-col class="icon-col" cols="12" sm="auto">
-                <div class="home__card__icon">
+    <v-row justify="center">
+      <template v-for="(item,i) in services">
+        <v-col cols="auto" :key="i" >
+          <router-link tag="div" :to="item.path" class="home__card">
+              <div class="home__card__icon">
+                <div class="home__card__icon-shadow">
+                </div>
+                <div class="home__card__icon-icon">
                   <v-icon v-html="item.icon"></v-icon>
                 </div>
-              </v-col>
-              <v-col class="ml-0">
-                <div class="home__card__content">
+              </div>
+              <div class="home__card__content">
+                <div class="home__card__content-shadow">
                   <h2 v-text="item.title"></h2>
                   <p v-text="item.description"></p>
                 </div>
-              </v-col>
-            </v-row>
+                <div class="home__card__content-content">
+                  <h2 v-text="item.title"></h2>
+                  <p v-text="item.description"></p>
+                </div>
+              </div>
           </router-link>
-        </template>
-      </v-col>
+        </v-col>
+      </template>
     </v-row>
   </div>
 </template>

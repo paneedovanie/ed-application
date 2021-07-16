@@ -33,14 +33,15 @@
 
     &__result {
       margin-bottom: 1.25rem;
-      background-color: $accent-2-color;
+      background-color: $white-color;
+      color: $black-color;
       padding: 0.5rem;
 
       &__location {
         margin-bottom: 1.25rem;
 
         &__continent {
-          background-color: $background-color;
+          background-color: $accent-2-color;
           color: $accent-1-color;
           padding: 0.2rem;
           display: inline;

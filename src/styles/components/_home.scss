@@ -1,9 +1,10 @@
 .home {
   &__card {
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 1rem;
     background-color: $accent-1-color;
     cursor: pointer;
+    border-radius: 0.8rem;
 
     .icon-col {
       display: flex;
@@ -11,20 +12,20 @@
     }
 
     &__icon {
-      background-color: $primary-color;
-      border-radius: 0.3rem;
+      background-color: $accent-2-color;
+      border-radius: 0.8rem;
       padding: 0.5rem;
       width: min-content;
 
       .v-icon.v-icon {
         font-size: 2rem;
-        color: $accent-1-color;
+        color: $black-color;
       }
     }
 
     &__content {
       p {
-        opacity: .65;
+        color: $secondary-color;
         font-style: italic;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -33,14 +34,32 @@
     }
 
     &:hover {
-      background-color: $accent-2-color;
-      box-shadow: 0 0.2rem 0.3rem grey;
+      // box-shadow: 0 0.2rem 0.3rem grey;
 
       .home__card__icon {
-        .v-icon.v-icon {
-          color: $accent-2-color;
+        .v-icon.v-icon { 
+          /* Start the shake animation and make the animation last for 0.5 seconds */
+          animation: shake 0.5s;
+          /* When the animation is finished, start again */
+          animation-iteration-count: infinite;
         }
       }
     }
   }
+}
+
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }

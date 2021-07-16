@@ -26,17 +26,13 @@
       button {
         &.copy {
           background-color: $success-color;
-          color: $accent-1-color;
+          color: $white-color;
         }
       }
     }
 
     &__result {
       margin-bottom: 1.25rem;
-      
-      input {
-        background-color: $accent-2-color;
-      }
     }
   }
 }
